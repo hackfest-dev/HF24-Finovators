@@ -1,13 +1,536 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <head>
+      <title>Cryptocode - Free Cryptocurrency Bootstrap 5 HTML Template</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="format-detection" content="telephone=no">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="author" content="">
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+
+      <link href="./Credit Card Validation Demo_files/css" rel="stylesheet">
+      <link rel="stylesheet" href="./Credit Card Validation Demo_files/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="./Credit Card Validation Demo_files/styles.css">
+      <link rel="stylesheet" type="text/css" href="./Credit Card Validation Demo_files/demo.css">
+      
+      <link rel="stylesheet" type="text/css" href="css/vendor.css">
+      <link rel="stylesheet" type="text/css" href="assets/fonts/icomoon.css">
+      <link href="assets/vendor/bootstrap-5.1.3/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Lato:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
+    
+      <!-- script
+        ================================================== -->
+      <script src="js/modernizr.js"></script>
+    </head>    
+
+    <body class="homepage bg-dark text-white">
+  <nav class="navbar navbar-expand-lg container-fluid p-4 ">
+    <div class="container-fluid">
+      <div class="main-logo">
+        <a href="index.html">
+          <img src="images/logos.png" alt="logo" class="jjj">
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <iconify-icon icon="system-uicons:menu-hamburger" class="hamburger-menu"></iconify-icon>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body justify-content-lg-between">
+          <div class="main-menu text-center d-lg-flex align-items-center ">
+            <ul class="menu-list list-unstyled d-lg-flex content-light m-0">
+              
+              <li class="menu-item text-uppercase dropdown">
+                
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="btn-wrap d-md-flex">
+            <!-- <a href="#" id="useraccount" class="btn btn-normal btn-medium align-self-center text-uppercase btn-rounded login-btn"  data-bs-toggle="modal" data-bs-target="#exampleModal"></a> -->
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="tabs-listing mt-4">
+                                    <nav>
+                                      <div class="nav nav-tabs d-flex justify-content-center border-0" id="nav-tab" role="tablist">
+                                        <button class="btn btn-outline-primary text-uppercase me-3 active" id="nav-sign-in-tab"
+                                          data-bs-toggle="tab" data-bs-target="#nav-sign-in" type="button" role="tab"
+                                          aria-controls="nav-sign-in" aria-selected="true">Log In</button>
+                                        <button class="btn btn-outline-primary text-uppercase" id="nav-register-tab"
+                                          data-bs-toggle="tab" data-bs-target="#nav-register" type="button" role="tab"
+                                          aria-controls="nav-register" aria-selected="false">Sign Up</button>
+                                      </div>
+                                    </nav>
+                                    <div class="tab-content" id="nav-tabContent">
+                                      <div class="tab-pane fade active show" id="nav-sign-in" role="tabpanel"
+                                        aria-labelledby="nav-sign-in-tab">
+                                        <form id="form1" class="form-group flex-wrap p-3 ">
+                                          <div class="form-input col-lg-12 my-4">
+                                            <label for="exampleInputEmail1"
+                                              class="form-label fs-6 text-uppercase fw-bold text-black ">Email
+                                              Address</label>
+                                            <input type="text" id="exampleInputEmail1" name="email" placeholder="Email"
+                                              class="form-control bg-secondary bg-opacity-10 ps-3">
+                                          </div>
+                                          <div class="form-input col-lg-12 my-4">
+                                            <label for="inputPassword1"
+                                              class="form-label  fs-6 text-uppercase fw-bold text-black ">Password</label>
+                                            <input type="password" id="inputPassword1" placeholder="Password"
+                                              class="form-control bg-secondary bg-opacity-10 ps-3" aria-describedby="passwordHelpBlock">
+                                            <div id="passwordHelpBlock" class="form-text text-center">
+                                              <a href="#" class=" password">Forgot Password ?</a>
+                                            </div>
+            
+                                          </div>
+                                          <label class="py-3">
+                                            <input type="checkbox" required="" class="d-inline">
+                                            <span class="label-body text-black">Remember Me</span>
+                                          </label>
+                                          <div class="d-grid my-3">
+                                            <button class="btn btn-primary btn-lg btn-dark text-uppercase btn-rounded-none fs-6">Log
+                                              In</button>
+                                          </div>
+                                        </form>
+                                      </div>
+                                      <div class="tab-pane fade" id="nav-register" role="tabpanel"
+                                        aria-labelledby="nav-register-tab">
+                                        <form id="form2" class="form-group flex-wrap p-3 ">
+                                          <div class="form-input col-lg-12 my-4">
+                                            <label for="exampleInputEmail2"
+                                              class="form-label fs-6 text-uppercase fw-bold text-black">Email
+                                              Address</label>
+                                            <input type="text" id="exampleInputEmail2" name="email" placeholder="Email"
+                                              class="form-control bg-secondary bg-opacity-10 ps-3">
+                                          </div>
+                                          <div class="form-input col-lg-12 my-4">
+                                            <label for="inputPassword2"
+                                              class="form-label  fs-6 text-uppercase fw-bold text-black">Password</label>
+                                            <input type="password" id="inputPassword2" placeholder="Password"
+                                              class="form-control bg-secondary bg-opacity-10 ps-3" aria-describedby="passwordHelpBlock">
+                                          </div>
+                                          <label class="py-3">
+                                            <input type="checkbox" required="" class="d-inline">
+                                            <span class="label-body text-black">I agree to the <a href="#"
+                                                class="text-black password border-bottom">Privacy Policy</a>
+                                            </span>
+                                          </label>
+                                          <div class="d-grid my-3">
+                                            <button
+                                              class="btn btn-primary btn-lg btn-dark text-uppercase btn-rounded-none fs-6">Sign
+                                              Up</button>
+                                          </div>
+                                        </form>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+            <a href="#" id="useraccount" class="btn btn-linear btn-medium align-self-center btn-rounded text-uppercase register-btn mt-3 mt-md-0" data-bs-toggle="modal"
+            data-bs-target="#exampleModal2">User: Card No</a>
+            <div class="progress-loader">
+              Credit Score: <div class="progress"></div>
+            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="tabs-listing mt-4">
+                                    <nav>
+                                      <div class="nav nav-tabs d-flex justify-content-center border-0" id="nav-tab2" role="tablist">
+                                        <button class="btn btn-outline-primary text-uppercase me-4 " id="nav-sign-in-tab2"
+                                          data-bs-toggle="tab" data-bs-target="#nav-sign-in2" type="button" role="tab"
+                                          aria-controls="nav-sign-in2" aria-selected="false">Log In</button>
+                                        <button class="btn btn-outline-primary text-uppercase active" id="nav-register-tab2"
+                                          data-bs-toggle="tab" data-bs-target="#nav-register2" type="button" role="tab"
+                                          aria-controls="nav-register2" aria-selected="true">Sign Up</button>
+                                      </div>
+                                    </nav>
+                                    <div class="tab-content" id="nav-tabContent1">
+                                      <div class="tab-pane fade " id="nav-sign-in2" role="tabpanel"
+                                        aria-labelledby="nav-sign-in-tab2">
+                                        <form id="form3" class="form-group flex-wrap p-3 ">
+                                          <div class="form-input col-lg-12 my-4">
+                                            <label for="exampleInputEmail3"
+                                              class="form-label fs-6 text-uppercase fw-bold text-black">Email
+                                              Address</label>
+                                            <input type="text" id="exampleInputEmail3" name="email" placeholder="Email"
+                                              class="form-control bg-secondary bg-opacity-10 ps-3">
+                                          </div>
+                                          <div class="form-input col-lg-12 my-4">
+                                            <label for="inputPassword3"
+                                              class="form-label  fs-6 text-uppercase fw-bold text-black">Password</label>
+                                            <input type="password" id="inputPassword3" placeholder="Password"
+                                              class="form-control bg-secondary bg-opacity-10 ps-3" aria-describedby="passwordHelpBlock">
+                                            <div id="passwordHelpBlock2" class="form-text text-center">
+                                              <a href="#" class=" password">Forgot Password ?</a>
+                                            </div>
+            
+                                          </div>
+                                          <label class="py-3">
+                                            <input type="checkbox" required="" class="d-inline">
+                                            <span class="label-body text-black">Remember Me</span>
+                                          </label>
+                                          <div class="d-grid my-3">
+                                            <button class="btn btn-primary btn-lg btn-dark text-uppercase btn-rounded-none fs-6">Log
+                                              In</button>
+                                          </div>
+                                        </form>
+                                      </div>
+                                      <div class="tab-pane fade active show" id="nav-register2" role="tabpanel"
+                                        aria-labelledby="nav-register-tab2">
+                                        <form id="form4" class="form-group flex-wrap p-3 ">
+                                          <div class="form-input col-lg-12 my-4">
+                                            <label for="exampleInputEmail4"
+                                              class="form-label fs-6 text-uppercase fw-bold text-black">Email
+                                              Address</label>
+                                            <input type="text" id="exampleInputEmail4" name="email" placeholder="Email"
+                                              class="form-control bg-secondary bg-opacity-10 ps-3">
+                                          </div>
+                                          <div class="form-input col-lg-12 my-4">
+                                            <label for="inputPassword4"
+                                              class="form-label  fs-6 text-uppercase fw-bold text-black">Password</label>
+                                            <input type="password" id="inputPassword4" placeholder="Password"
+                                              class="form-control bg-secondary bg-opacity-10 ps-3" aria-describedby="passwordHelpBlock">
+                                          </div>
+                                          <label class="py-3">
+                                            <input type="checkbox" required="" class="d-inline">
+                                            <span class="label-body text-black">I agree to the <a href="#"
+                                                class="text-black password border-bottom">Privacy Policy</a>
+                                            </span>
+                                          </label>
+                                          <div class="d-grid my-3">
+                                            <button
+                                              class="btn btn-primary btn-lg btn-dark text-uppercase btn-rounded-none fs-6">Sign
+                                              Up</button>
+                                          </div>
+                                        </form>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div id="billboard" class="padding-medium overflow-hidden">
+    <div class="container">
+      <div class="row d-flex flex-wrap">
+        <div class="col-md-5">
+          <div class="image-holder border-set-bold border-rounded-circle">
+            <img src="images/iii.png" alt="banner" class="banner-image">
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="banner-content content-light m-5">
+            <h1 class="banner-title display-3">Welcome to Finnovate,</h1>
+            <p>We fuse the prowes of Machine Learning with the robustness of Blockchain Technology to fortify every transaction. Our platform serves as a seamless plug-in for credit card transactions.
+            <br>
+            Join us in redefining secure transactions and ensuring trust in every financial interaction.</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <section id="association-with" class="padding-large">
+    <div class="container">
+      <div class="row d-flex flex-wrap justify-content-between">
+        <div class="container-fluid">
+        
+          <div class="creditCardForm">
+              <div class="heading">
+                  <h1>Confirm Purchase</h1>
+              </div>
+              <div class="payment">
+                  <form id="userCredentials">
+                      <div class="form-group owner">
+                          <label for="owner">Owner</label>
+                          <input type="text" class="form-control" id="owner">
+                      </div>
+                      <div class="form-group CVV">
+                          <label for="cvv">CVV</label>
+                          <input type="text" class="form-control" id="cvv">
+                      </div>
+                      <div class="form-group" id="card-number-field">
+                          <label for="cardNumber">Card Number</label>
+                          <input type="text" class="form-control" id="cardNumber">
+                      </div>
+                      <div class="form-group" id="expiration-date">
+                          <label>Expiration Date</label>
+                          <select id="exp-month">
+                              <option value="01">January</option>
+                              <option value="02">February </option>
+                              <option value="03">March</option>
+                              <option value="04">April</option>
+                              <option value="05">May</option>
+                              <option value="06">June</option>
+                              <option value="07">July</option>
+                              <option value="08">August</option>
+                              <option value="09">September</option>
+                              <option value="10">October</option>
+                              <option value="11">November</option>
+                              <option value="12">December</option>
+                          </select>
+                          <select id="exp-year">
+                              <option value="16"> 2016</option>
+                              <option value="17"> 2017</option>
+                              <option value="18"> 2018</option>
+                              <option value="19"> 2019</option>
+                              <option value="20"> 2020</option>
+                              <option value="21"> 2021</option>
+                          </select>
+                      </div>
+                      <div class="form-group" id="credit_cards">
+                          <img src="./Credit Card Validation Demo_files/visa.jpg" id="visa">
+                          <img src="./Credit Card Validation Demo_files/mastercard.jpg" id="mastercard">
+                          <img src="./Credit Card Validation Demo_files/amex.jpg" id="amex">
+                      </div>
+                      <div class="form-group owner">
+                        <label for="recipentCreditNo">Recipent Card No</label>
+                        <input type="text" class="form-control" id="recipentCreditNo">
+                    </div>
+                    <div class="form-group CVV">
+                        <label for="amount">Amount</label>
+                        <input type="text" class="form-control" id="amount">
+                    </div>
+                      <div class="form-group" id="pay-now">
+                          <button type="submit" class="btn btn-default" id="confirm-purchase">Confirm</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+  
+          
+  
+          
+      </div>
+      <script src="./Credit Card Validation Demo_files/jquery.min.js.download"></script>
+      <script src="./Credit Card Validation Demo_files/bootstrap.min.js.download"></script>
+      <script src="./Credit Card Validation Demo_files/jquery.payform.min.js.download" charset="utf-8"></script>
+      <script src="./Credit Card Validation Demo_files/script.js.download"></script>
+  <!-- Code injected by live-server -->
+  <script>
+    // <![CDATA[  <-- For SVG support
+    if ('WebSocket' in window) {
+      (function () {
+        function refreshCSS() {
+          var sheets = [].slice.call(document.getElementsByTagName("link"));
+          var head = document.getElementsByTagName("head")[0];
+          for (var i = 0; i < sheets.length; ++i) {
+            var elem = sheets[i];
+            var parent = elem.parentElement || head;
+            parent.removeChild(elem);
+            var rel = elem.rel;
+            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+              var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+              elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+            }
+            parent.appendChild(elem);
+          }
+        }
+        var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+        var address = protocol + window.location.host + window.location.pathname + '/ws';
+        var socket = new WebSocket(address);
+        socket.onmessage = function (msg) {
+          if (msg.data == 'reload') window.location.reload();
+          else if (msg.data == 'refreshcss') refreshCSS();
+        };
+        if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+          console.log('Live reload enabled.');
+          sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+        }
+      })();
+    }
+    else {
+      console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+    }
+    // ]]>
+  </script>
+  
+  
+      </div>
+    </div>
+  </section>
+
+  <section id="product-card" class="position-relative padding-large">
+    <div class="pattern-overlay"><img src="images/pattern-blur.png" alt="pattern-overlay"></div>
+
+    
+
+  <section id="subscribe" class="padding-large pattern-circle">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+
+        <div class="col-md-8">
+          <div class="subscribe-content">
+            <div class="subscribe-header text-center">
+              <h2 class="display-5">Subscribe & get updated</h2>
+              <p>Stay in the loop with our latest updates and innovations by subscribing today. Get access to exclusive content, industry insights, and news about our platform's advancements in securing transactions and detecting fraud. Don't miss out on staying ahead of the curve—subscribe now!</p>
+            </div>
+            <form id="form" class="border-set-bold border-rounded-20">
+              <input type="text" name="email" placeholder="Write your email here" class="btn-rounded">
+              <button class="btn btn-linear btn-medium btn-rounded text-uppercase">Subscribe Now</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="padding-large">
+    <div class="container">
+      <div class="row d-flex flex-wrap justify-content-between">
+        <div class="col-sm-6 col-lg-4">
+          <div class="footer-item item-001">
+            <img src="images/logos.png" width="250px" height="250px" position="relative" up="200px" alt="logo">
+            <p>Posuere ac in in nisl sed augue. Ultrices eget pretium sit euismod mi id posuere ac in in nisl sed augue.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-2">
+          <div class="footer-item item-002 content-light">
+            <h4 class="widget-title">About</h4>
+            <ul class="footer-menu list-unstyled text-uppercase">
+              <li>
+                <a href="#">About us</a>
+              </li>
+              <li>
+                <a href="#">Features</a>
+              </li>
+              <li>
+                <a href="#">News</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-2">
+          <div class="footer-item item-003 content-light">
+            <h4 class="widget-title">Company</h4>
+            <ul class="footer-menu list-unstyled text-uppercase">
+              <li>
+                <a href="#">Cryptocode</a>
+              </li>
+              <li>
+                <a href="#">Security</a>
+              </li>
+              <li>
+                <a href="#">Rankings</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-2">
+          <div class="footer-item item-004 content-light">
+            <h4 class="widget-title">Support</h4>
+            <ul class="footer-menu list-unstyled text-uppercase">
+              <li>
+                <a href="#">FAQs</a>
+              </li>
+              <li>
+                <a href="#">Support</a>
+              </li>
+              <li>
+                <a href="#">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-2">
+          <div class="footer-item item-005 content-light">
+            <h4 class="widget-title">Social</h4>
+            <ul class="footer-menu social-links list-unstyled d-flex">
+              <li class="border-set-thin border-rounded-10">
+                <a href="#"><i class="icon icon-facebook"></i></a>
+              </li>
+              <li class="border-set-thin border-rounded-10">
+                <a href="#"><i class="icon icon-twitter"></i></a>
+              </li>
+              <li class="border-set-thin border-rounded-10">
+                <a href="#"><i class="icon icon-instagram"></i></a>
+              </li>
+              <li class="border-set-thin border-rounded-10">
+                <a href="#"><i class="icon icon-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  
+  <script>
+    let form = document.querySelector("#userCredentials")
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault()
+      document.getElementById("useraccount").innerText = "User: " + document.getElementById("cardNumber").value;
+      let data = {
+        owner: document.getElementById("owner").value,
+        cardNumber: Number(document.getElementById("cardNumber").value),
+        cvv: Number(document.getElementById("cvv").value),
+        expMonth: Number(document.getElementById("exp-month").value),
+        expYear: Number(document.getElementById("exp-year").value), 
+        recipentCardNo: Number(document.getElementById("recipentCreditNo").value),
+        amount: Number(document.getElementById("amount").value)
+      }
+
+      let response = await fetch("http://localhost:3000/transaction", {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      })
+      let result = await response.json()
+      console.log(result);
+    })
+  </script>
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="assets/vendor/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+
+
 </html>
